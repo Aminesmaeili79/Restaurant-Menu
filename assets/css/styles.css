@@ -72,17 +72,42 @@ a {
 	align-items: center;
 }
 
-/* .slider img {
-	height: 100vh;
-	aspect-ratio: 7 / 5;
-	display: none;
-} */
-
 .slider svg {
 	width: 100%;
-	/* height: 100vh; */
-	/* aspect-ratio: 7 / 5; */
 	display: none;
+}
+
+.slides-hero {
+	width: 100%;
+}
+
+.slider .hero {
+	background-color: #bcbcbc;
+	width: 100%;
+	height: 90vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.slider .hero-divider {
+	background-color: #f9cf6c;
+	height: 10vh;
+	width: 100%;
+}
+
+.hero-title {
+	font-size: 9.8rem;
+}
+
+.hero-description {
+	font-size: 3.2rem;
+	text-align: center;
+
+	padding: 0 4rem;
 }
 
 svg.display-slide {
@@ -116,14 +141,46 @@ button.next {
 /* MAIN GALLERY */
 
 .gallery {
-	margin-top: 14rem;
+	margin: 14rem 0;
+	padding: 0 4rem;
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	justify-items: center;
-	row-gap: 4rem;
+	row-gap: 12rem;
 	column-gap: 14rem;
+}
+
+.gallery-item {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
+}
+
+.item-title {
+	flex-grow: 1;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.item-title h3 {
+	color: var(--color-text-dark);
+	font-size: 2.4rem;
+}
+
+.item-title button {
+	font-size: 2rem;
+	color: var(--color-text-light);
+	background-color: #c61212;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
 }
 
 .gallery svg {
@@ -253,7 +310,6 @@ button.next {
 .svg-dl-on-appstore,
 .svg-get-it-gp {
 	height: 20rem;
-	/* width: 17rem; */
 	width: 100%;
 
 	flex-shrink: 0;

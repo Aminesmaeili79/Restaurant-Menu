@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Freeman&family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./assets/css/signup.css" />
+		<title>Sign Up</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1><a href="./signin.html">Return to sign in page</a></h1>
+			<div class="item">
+				<h2>NEW ACCESS TO MCDELIVERY</h2>
+				<p>
+					Setup a McDonald's App account that will give you access to both
+					McDonald's App and McDelivery service. This allows you to earn loyalty
+					points with every purchase, enjoy easy access to exclusive offers and
+					promotions.
+				</p>
+			</div>
+
+			<div class="item">
+				<form action="">
+					<h2>CREATE A NEW ACCOUNT</h2>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<title>information-variant-circle</title>
+							<path
+								d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22M12.3 7.29C12.5 7.11 12.74 7 13 7C13.27 7 13.5 7.11 13.71 7.29C13.9 7.5 14 7.74 14 8C14 8.27 13.9 8.5 13.71 8.71C13.5 8.9 13.27 9 13 9C12.74 9 12.5 8.9 12.3 8.71C12.11 8.5 12 8.27 12 8C12 7.74 12.11 7.5 12.3 7.29M9.8 11.97C9.8 11.97 11.97 10.25 12.76 10.18C13.5 10.12 13.35 10.97 13.28 11.41L13.27 11.47C13.13 12 12.96 12.64 12.79 13.25C12.41 14.64 12.04 16 12.13 16.25C12.23 16.59 12.85 16.16 13.3 15.86C13.36 15.82 13.41 15.78 13.46 15.75C13.46 15.75 13.54 15.67 13.62 15.78C13.64 15.81 13.66 15.84 13.68 15.86C13.77 16 13.82 16.05 13.7 16.13L13.66 16.15C13.44 16.3 12.5 16.96 12.12 17.2C11.71 17.47 10.14 18.37 10.38 16.62C10.59 15.39 10.87 14.33 11.09 13.5C11.5 12 11.68 11.32 10.76 11.91C10.39 12.13 10.17 12.27 10.04 12.36C9.93 12.44 9.92 12.44 9.85 12.31L9.82 12.25L9.77 12.17C9.7 12.07 9.7 12.06 9.8 11.97Z"
+							/>
+						</svg>
+						Already have a McDonald’s account? You can proceed
+						<a href="./signin.html"
+							>to sign in with the same username and password.</a
+						>
+					</p>
+					<div class="email">
+						<label for="email" required>*Email</label>
+						<input id="email" type="email" />
+					</div>
+					<div class="password">
+						<label for="password" required>*Password</label>
+						<input id="password" type="password" required />
+					</div>
+					<p class="password-length">
+						Password must be 18-128 characters with 1 upper case letter, 1 lower
+						case letter and 1 numeric digit.
+					</p>
+					<h2 class="about">ABOUT YOU</h2>
+					<div class="names">
+						<div class="first-name">
+							<label for="first-name">*First Name:</label>
+							<input id="first-name" type="text" required />
+						</div>
+						<div class="last-name">
+							<label for="last-name">*Last Name:</label>
+							<input id="last-name" type="text" required />
+						</div>
+					</div>
+					<div class="number">
+						<label for="number">*Contact Number:</label>
+						<input
+							placeholder="Digits Only"
+							type="number"
+							name=""
+							id="number"
+							required
+						/>
+					</div>
+					<div class="terms">
+						<h2>TERM AND CONDITIONS</h2>
+						<p>
+							The purpose of this account is to provide you with offers based on
+							your preferences and account usage. If you do not want McDonald's
+							to use your preferences and account usage in this way then you
+							should not proceed to registration. See our Privacy Policy.
+						</p>
+						<p>All fields marked with * need to be filled in and/or checked.</p>
+						<div class="checkbox">
+							<input id="news" type="checkbox" />
+							<label for="news"
+								>I would like to receive news, updates and promotions from
+								McDonald's via email</label
+							>
+						</div>
+						<div class="checkbox">
+							<input id="programme" type="checkbox" />
+							<label for="programme"
+								>I would like to join the loyalty programme to earn points based
+								on purchases I make in McDonald's, and receive personalised
+								offers (based on my preferences and order history)</label
+							>
+						</div>
+						<div class="checkbox">
+							<input id="age" type="checkbox" required />
+							<label for="age"
+								>I am aged 16 or over and agree to the <a
+									href="./support/terms-and-conditions.html"
+									>Terms & Conditions</a
+								> and the <a href="./support/privacy-policy.html"
+									>Privacy Policy</a
+								>.*</label
+							>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

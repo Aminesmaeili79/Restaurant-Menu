@@ -30,8 +30,6 @@ a {
 	align-items: center;
 	justify-content: space-around;
 	/* gap: 8rem; */
-
-	z-index: 1000;
 }
 
 .nav-bar a {
@@ -49,6 +47,46 @@ a {
 	color: #f9cf6c;
 }
 
+/* DROPDOWN MENU */
+.nav-bar {
+	list-style-type: none;
+	padding: 2rem 0;
+	z-index: 999999;
+}
+
+.nav-bar li {
+	position: relative;
+	height: max-content;
+}
+
+.dropdown li a {
+	font-size: 2rem;
+	font-weight: 300;
+	color: var(--color-text-light);
+	display: block;
+	padding: 1.5rem 2rem;
+}
+.dropdown {
+	width: 100%;
+	list-style-type: none;
+	position: absolute;
+	padding: 4rem 0;
+	z-index: 999999;
+	display: none;
+
+	background-color: rgba(51, 51, 51, 0.8);
+}
+
+ul li:hover .dropdown,
+ul li:focus .dropdown {
+	display: block;
+}
+
+ul li:hover,
+ul li:focus {
+	display: block;
+}
+
 /* SLIDER */
 
 .slider {
@@ -58,6 +96,73 @@ a {
 	margin: auto;
 
 	overflow: hidden;
+}
+
+.slider.bg-1 {
+	color: var(--color-text-light);
+	background: url(../images/bg-1.webp);
+	background-position: center;
+	background-size: cover;
+}
+
+.slider.bg-2 {
+	color: var(--color-text-light);
+	background: url(../images/bg-2.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slider.bg-3 {
+	color: var(--color-text-light);
+	background: url(../images/bg-3.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slider.bg-4 {
+	color: var(--color-text-light);
+	background: url(../images/bg-4.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slider.bg-5 {
+	color: var(--color-text-light);
+	background: url(../images/bg-5.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slider.bg-6 {
+	color: var(--color-text-light);
+	background: url(../images/bg-6.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slider.bg-7 {
+	color: var(--color-text-light);
+	background: url(../images/bg-7.avif);
+	background-position: center;
+	background-size: cover;
+}
+
+.slider.bg-8 {
+	color: var(--color-text-light);
+	background: url(../images/bg-8.jpeg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slider.bg-1 > div > *,
+.slider.bg-2 > div > *,
+.slider.bg-3 > div > *,
+.slider.bg-4 > div > *,
+.slider.bg-5 > div > *,
+.slider.bg-6 > div > *,
+.slider.bg-7 > div > *,
+.slider.bg-8 > div > * {
+	background-color: transparent;
 }
 
 .slides {
@@ -91,6 +196,10 @@ a {
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
+}
+
+.text-shadow {
+	text-shadow: 0 5px 25px rgba(0, 0, 0, 1);
 }
 
 .slider .hero-divider {
@@ -129,26 +238,37 @@ svg.display-slide {
 	cursor: pointer;
 }
 
+.slider button.ask-a-question {
+	position: relative;
+	top: 0;
+	transform: none;
+
+	font-size: 2rem;
+	color: var(--color-text-light);
+	background-color: #c61212;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+}
+
 button.prev {
 	left: 0;
-	transform: translateX(-50%);
 }
 button.next {
 	right: 0;
-	transform: translateX(50%);
 }
 
 /* MAIN GALLERY */
 
 .gallery {
 	margin: 14rem 0;
-	padding: 0 4rem;
+	padding: 0 8rem;
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	align-items: center;
+	align-items: start;
 	justify-items: center;
-	row-gap: 12rem;
+	row-gap: 14rem;
 	column-gap: 14rem;
 }
 
@@ -201,6 +321,207 @@ button.next {
 
 .svg-mobile {
 	background-color: #fb9d00;
+}
+
+/* HAPPY MEAL */
+.happy-meal-container {
+	padding: 8rem 12rem 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 14rem;
+}
+
+.happy-meal-section {
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+}
+
+.happy-meal-section:not(:first-child) {
+	width: 100%;
+	align-self: flex-start;
+}
+
+.centered {
+	justify-content: center;
+	border-top: 2rem solid #f9cf6c;
+	margin-top: 8rem;
+	padding-top: 14rem;
+}
+
+.centered .happy-meal-item {
+	border: 1px solid black;
+	padding-bottom: 2rem;
+	gap: 4rem;
+}
+
+.happy-meal-section h3 {
+	font-size: 3.2rem;
+	text-align: center;
+}
+
+.happy-meal-items {
+	display: flex;
+	gap: 6rem;
+}
+
+.happy-meal-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+}
+
+.happy-meal-item h4 {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+.happy-meal-item a {
+	font-size: 2rem;
+	color: var(--color-text-light);
+	background-color: #c61212;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+}
+
+/* MCDONALD MENU */
+.menu-section {
+	width: 100%;
+	align-self: flex-start;
+
+	display: flex;
+	flex-direction: column;
+	gap: 8rem;
+}
+
+.menu-section h3 {
+	font-size: 3.2rem;
+	text-align: center;
+}
+
+.menu-items {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 10rem;
+	row-gap: 8rem;
+}
+
+.menu-items:nth-child(2n) {
+	justify-self: end;
+}
+
+.menu-items:nth-child(2n-1) {
+	justify-self: start;
+}
+
+/* INGREDIENTS */
+
+.ingredients-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.ingredients-container svg {
+	width: 100%;
+	height: auto;
+}
+
+.ingredients-container div {
+	padding: 4rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+}
+
+.ingredients-container div h3 {
+	font-size: 4.4rem;
+}
+
+.ingredients-container div p {
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+/* SUPPLIERS */
+.suppliers-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	row-gap: 4rem;
+}
+
+.suppliers-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: space-between; */
+	gap: 2rem;
+}
+
+.suppliers-item svg {
+	width: 100%;
+	height: auto;
+}
+
+.suppliers-item .item-description {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2.5rem;
+}
+
+.suppliers-item h3 {
+	font-size: 3.2rem;
+}
+
+.suppliers-item p {
+	font-size: 2.2rem;
+}
+
+.suppliers-item a {
+	font-size: 2rem;
+	color: var(--color-text-light);
+	background-color: #c61212;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+}
+
+/* YOUR RIGHT TO KNOW */
+
+.yrtk-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 4rem;
+	row-gap: 2rem;
+	padding: 2rem 4rem;
+}
+
+.questions {
+	padding: 1rem 2rem;
+}
+
+.questions h4 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.question {
+	font-size: 1.6rem;
+}
+
+.question a {
+	color: #4f4fdb;
 }
 
 /* FOOTER */
@@ -269,8 +590,6 @@ button.next {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
-
-	/* padding: 4rem 0; */
 }
 
 .socials h2 {

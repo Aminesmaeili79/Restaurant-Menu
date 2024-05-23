@@ -1,0 +1,93 @@
+:root {
+	font-size: 62.5%;
+	font-family: "Inter", sans-serif;
+
+	--color-text: #333;
+}
+
+* {
+	color: var(--color-text);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #4f4fdb;
+}
+
+.container {
+	width: 60%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	margin: 4rem auto;
+}
+
+.container ul {
+	font-size: 1.6rem;
+	letter-spacing: 0.4px;
+	line-height: 1.6;
+	margin-bottom: 3rem;
+}
+
+.return {
+	color: var(--color-text);
+	text-decoration: none;
+	font-size: 2.4rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+
+.container h1 {
+	font-size: 3.2rem;
+	font-weight: 300;
+}
+
+.container h2 {
+	font-size: 2.4rem;
+	margin-bottom: 1rem;
+}
+
+h1.privacy {
+	font-weight: 600;
+}
+
+.container p {
+	font-size: 2rem;
+	line-height: 1.6;
+	letter-spacing: 0.3px;
+}
+
+.help {
+	display: flex;
+	gap: 1rem;
+}
+
+.help svg {
+	width: 2rem;
+	fill: #59a5fe;
+}
+
+.how-to-contact {
+	margin-top: 6rem;
+}
+
+footer {
+	background-color: black;
+	padding: 4rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+footer p {
+	font-weight: 200;
+	font-size: 1.6rem;
+	color: #f7f7f7;
+}

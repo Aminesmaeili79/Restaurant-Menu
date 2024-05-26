@@ -186,6 +186,12 @@ ul li:focus {
 	width: 100%;
 }
 
+.slides img {
+	height: 100vh;
+	width: 100%;
+	display: none;
+}
+
 .slider .hero {
 	background-color: #bcbcbc;
 	width: 100%;
@@ -220,6 +226,10 @@ ul li:focus {
 }
 
 svg.display-slide {
+	display: block;
+}
+
+img.display-slide {
 	display: block;
 }
 
@@ -261,7 +271,8 @@ button.next {
 /* MAIN GALLERY */
 
 .gallery {
-	margin: 14rem 0;
+	width: 80%;
+	margin: 14rem auto;
 	padding: 0 8rem;
 
 	display: grid;
@@ -270,6 +281,12 @@ button.next {
 	justify-items: center;
 	row-gap: 14rem;
 	column-gap: 14rem;
+}
+
+.gallery a img {
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	width: 100%;
 }
 
 .gallery-item {
@@ -624,6 +641,20 @@ button.next {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
+}
+
+.download h2 {
+	flex-basis: 40%;
+}
+
+.download a {
+	display: inline-block;
+	flex-grow: 0;
+	flex-shrink: 10000;
+}
+
+.download a img {
+	width: 75%;
 }
 
 .svg-dl-on-appstore,

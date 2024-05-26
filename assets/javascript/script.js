@@ -1,5 +1,5 @@
 // IMAGE SLIDER
-const slides = document.querySelectorAll(".slides svg");
+const slides = document.querySelectorAll(".slides img");
 console.log(slides);
 
 let slideIndex = 0;
